@@ -9,10 +9,17 @@ function AppleStoreBadge() {
   return (
     <svg viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full" aria-hidden="true">
       <rect width="120" height="40" rx="7" fill="#111111"/>
-      <path d="M15.5 20c0-2.76 1.46-5.18 3.67-6.58-.09-.13-.19-.26-.29-.38C17.84 11.65 16.2 11 14.5 11c-1.8 0-3.5.96-3.5.96S9.5 11 7.5 11C4.47 11 2 13.69 2 17c0 3.87 2.76 8 5.5 8 1.15 0 2.34-.67 3.5-.67 1.16 0 2.24.67 3.5.67.69 0 1.36-.27 1.96-.68A7.97 7.97 0 0115.5 20z" fill="white"/>
-      <path d="M14.5 9c.61-.74 1-1.69 1-2.76 0-.08 0-.16-.01-.24C14.42 6.22 13.4 6.8 12.75 7.67 12.12 8.5 11.75 9.5 11.76 10.5c0 .08 0 .15.01.22.95-.03 1.89-.61 2.73-1.72z" fill="white"/>
-      <text x="26" y="16" fontFamily="-apple-system,BlinkMacSystemFont,sans-serif" fontSize="6" fill="#AAAAAA" letterSpacing="0.5">Download on the</text>
-      <text x="26" y="28" fontFamily="-apple-system,BlinkMacSystemFont,sans-serif" fontSize="13" fontWeight="600" fill="white" letterSpacing="-0.3">App Store</text>
+      {/* Apple logo — correct bite shape and leaf */}
+      <path
+        d="M13.28 20.38c.02-2.18 1.78-3.23 1.86-3.28-1.01-1.48-2.59-1.68-3.15-1.7-1.34-.14-2.62.79-3.3.79-.68 0-1.72-.77-2.83-.75-1.45.02-2.79.84-3.54 2.13-1.51 2.62-.39 6.49 1.09 8.61.72 1.04 1.58 2.21 2.71 2.17 1.09-.04 1.5-.7 2.82-.7 1.31 0 1.68.7 2.82.68 1.17-.02 1.91-1.06 2.62-2.1.83-1.2 1.17-2.37 1.19-2.43-.03-.01-2.28-.87-2.29-3.42z"
+        fill="white"
+      />
+      <path
+        d="M11.17 14.05c.6-.73.99-1.74.88-2.75-.85.04-1.88.57-2.49 1.28-.55.63-.99 1.65-.82 2.62.93.07 1.84-.47 2.43-1.15z"
+        fill="white"
+      />
+      <text x="22" y="16.5" fontFamily="-apple-system,BlinkMacSystemFont,sans-serif" fontSize="5.5" fill="#AAAAAA" letterSpacing="0.6">Download on the</text>
+      <text x="22" y="28" fontFamily="-apple-system,BlinkMacSystemFont,sans-serif" fontSize="13" fontWeight="600" fill="white" letterSpacing="-0.3">App Store</text>
     </svg>
   );
 }
@@ -21,26 +28,13 @@ function GooglePlayBadge() {
   return (
     <svg viewBox="0 0 135 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full" aria-hidden="true">
       <rect width="135" height="40" rx="7" fill="#111111"/>
-      <path d="M8 11.5l11.5 11.5L8 34.5V11.5z" fill="url(#play-grad-a)"/>
-      <path d="M22.5 19.5L8 11.5l9 9L22.5 19.5z" fill="url(#play-grad-b)"/>
-      <path d="M22.5 20.5L8 28.5l9-9L22.5 20.5z" fill="url(#play-grad-c)"/>
-      <path d="M8 11.5l14.5 8.5L8 28.5V11.5z" fill="url(#play-grad-d)"/>
-      <defs>
-        <linearGradient id="play-grad-a" x1="8" y1="11.5" x2="8" y2="34.5" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#00B0FF"/><stop offset="1" stopColor="#0091EA"/>
-        </linearGradient>
-        <linearGradient id="play-grad-b" x1="8" y1="11.5" x2="22.5" y2="19.5" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#00BFA5"/><stop offset="1" stopColor="#00E676"/>
-        </linearGradient>
-        <linearGradient id="play-grad-c" x1="8" y1="28.5" x2="22.5" y2="20.5" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#FF6D00"/><stop offset="1" stopColor="#FFAB40"/>
-        </linearGradient>
-        <linearGradient id="play-grad-d" x1="8" y1="11.5" x2="22.5" y2="20" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#FF1744"/><stop offset="1" stopColor="#FF5252"/>
-        </linearGradient>
-      </defs>
-      <text x="30" y="16" fontFamily="-apple-system,BlinkMacSystemFont,sans-serif" fontSize="6" fill="#AAAAAA" letterSpacing="0.5">GET IT ON</text>
-      <text x="30" y="28" fontFamily="-apple-system,BlinkMacSystemFont,sans-serif" fontSize="13" fontWeight="600" fill="white" letterSpacing="-0.3">Google Play</text>
+      {/* Google Play icon — flat colours, no gradient IDs to avoid duplicate-ID hydration issues */}
+      <path d="M7.5 13.2C7 13.5 7 14.1 7 14.1L7 25.9C7 25.9 7 26.5 7.5 26.8L7.6 26.9L14.3 20.2V20L7.6 13.1Z" fill="#00B8D4"/>
+      <path d="M16.5 18L14.3 20.2L7.5 13.2L7.6 13.1C7.9 12.9 8.3 12.9 8.6 13.1L16.5 18Z" fill="#43E97B"/>
+      <path d="M16.5 22L8.6 26.9C8.3 27.1 7.9 27.1 7.6 26.9L7.5 26.8L14.3 19.8Z" fill="#F5425D"/>
+      <path d="M16.5 18L8.6 13.1C8.3 12.9 7.9 12.9 7.6 13.1L14.3 20L16.5 22L19 20.7C19.6 20.4 19.6 19.6 19 19.3Z" fill="#FFB300"/>
+      <text x="26" y="16.5" fontFamily="-apple-system,BlinkMacSystemFont,sans-serif" fontSize="5.5" fill="#AAAAAA" letterSpacing="0.8">GET IT ON</text>
+      <text x="26" y="28" fontFamily="-apple-system,BlinkMacSystemFont,sans-serif" fontSize="13" fontWeight="600" fill="white" letterSpacing="-0.3">Google Play</text>
     </svg>
   );
 }
@@ -247,8 +241,9 @@ function PlatformDownloadBlock({
             brandColor={platform.brandColor}
             delay={0.15 + index * 0.1}
             icon={
-              <svg viewBox="0 0 20 20" className="w-5 h-5 fill-current" aria-hidden="true">
-                <path d="M14.69 10.5c-.01-2.27 1.86-3.36 1.94-3.41-1.06-1.55-2.71-1.76-3.3-1.78-1.4-.14-2.74.82-3.45.82-.7 0-1.78-.8-2.93-.78-1.5.02-2.9.87-3.67 2.2-1.57 2.72-.4 6.74 1.13 8.95.75 1.08 1.64 2.3 2.81 2.26 1.13-.04 1.56-.73 2.93-.73 1.36 0 1.75.73 2.93.71 1.21-.02 1.98-1.1 2.72-2.19.87-1.25 1.23-2.47 1.24-2.53-.03-.01-2.37-.91-2.35-3.52zM12.4 4.07c.62-.75.99-1.79.88-2.83-.85.04-1.87.57-2.48 1.29-.54.63-.93 1.64-.81 2.6.94.08 1.8-.44 2.41-1.06z"/>
+              <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" aria-hidden="true">
+                <path d="M13.28 10.69c.02-2.18 1.78-3.23 1.86-3.28-1.01-1.48-2.59-1.68-3.15-1.7-1.34-.14-2.62.79-3.3.79-.68 0-1.72-.77-2.83-.75-1.45.02-2.79.84-3.54 2.13-1.51 2.62-.39 6.49 1.09 8.61.72 1.04 1.58 2.21 2.71 2.17 1.09-.04 1.5-.7 2.82-.7 1.31 0 1.68.7 2.82.68 1.17-.02 1.91-1.06 2.62-2.1.83-1.2 1.17-2.37 1.19-2.43-.03-.01-2.28-.87-2.29-3.42z" fill="currentColor"/>
+                <path d="M11.17 6.36c.6-.73.99-1.74.88-2.75-.85.04-1.88.57-2.49 1.28-.55.63-.99 1.65-.82 2.62.93.07 1.84-.47 2.43-1.15z" fill="currentColor"/>
               </svg>
             }
           />
@@ -260,11 +255,11 @@ function PlatformDownloadBlock({
             brandColor={platform.brandColor}
             delay={0.25 + index * 0.1}
             icon={
-              <svg viewBox="0 0 20 20" className="w-5 h-5" aria-hidden="true">
-                <path d="M3.18 1.09L11.5 9.4 3.18 17.72A1 1 0 012 16.8V2.02a1 1 0 011.18-.93z" fill="#00D2FF"/>
-                <path d="M14.67 7.1L12 8.63 4.08 1 14.67 7.1z" fill="#00F076"/>
-                <path d="M14.67 12.67L4.08 18.77 12 11.14l2.67 1.53z" fill="#FF3D00"/>
-                <path d="M16 10.89a1 1 0 010 1.78l-1.33.78L11.5 9.4l3.17-3.05L16 7.13a1 1 0 010 1.78l-.01-.02v2z" fill="#FFD600"/>
+              <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" aria-hidden="true">
+                <path d="M2.5 4.6C2 4.9 2 5.5 2 5.5L2 14.5C2 14.5 2 15.1 2.5 15.4L2.6 15.5L9.8 10.15V10L2.6 4.5Z" fill="#00B8D4"/>
+                <path d="M12.2 7.9L9.8 10.15L2.5 4.6L2.6 4.5C2.9 4.3 3.3 4.3 3.6 4.5L12.2 7.9Z" fill="#43E97B"/>
+                <path d="M12.2 12.1L3.6 15.5C3.3 15.7 2.9 15.7 2.6 15.5L2.5 15.4L9.8 9.85Z" fill="#F5425D"/>
+                <path d="M12.2 7.9L3.6 4.5C3.3 4.3 2.9 4.3 2.6 4.5L9.8 10L12.2 12.1L15.2 10.55C15.8 10.25 15.8 9.75 15.2 9.45Z" fill="#FFB300"/>
               </svg>
             }
           />
