@@ -105,6 +105,16 @@ body {
   z-index: 0;
 }
 
+/* Nav height tokens — single source of truth */
+:root {
+  --nav-height: 64px;
+}
+@media (min-width: 768px) {
+  :root {
+    --nav-height: 72px;
+  }
+}
+
 .section-padding {
   padding: 120px 0;
 }

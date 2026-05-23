@@ -5,6 +5,9 @@ import { useRef } from "react";
 import Image from "next/image";
 import { MapPin, Shield } from "lucide-react";
 
+// Evaluated once at module load — same value on server and client, no hydration mismatch
+const CURRENT_YEAR = new Date().getFullYear();
+
 const footerLinks = {
   "HelpingHandsAu": [
     { label: "How it Works",         href: "#ecosystem" },
@@ -39,7 +42,6 @@ const footerLinks = {
 export default function Footer() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-40px" });
-  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-[#0E0E0E] text-white" role="contentinfo" aria-label="Site footer">
@@ -182,8 +184,8 @@ export default function Footer() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="py-5 flex flex-col sm:flex-row items-center justify-between gap-4"
         >
-          <p className="text-xs text-gray-600 text-center sm:text-left" suppressHydrationWarning>
-            © {currentYear} HelpingHandsAu Pty Ltd &amp; LetsGO Technologies Pty Ltd.
+          <p className="text-xs text-gray-600 text-center sm:text-left">
+            © {CURRENT_YEAR} HelpingHandsAu Pty Ltd &amp; LetsGO Technologies Pty Ltd.
             All rights reserved.
           </p>
           <div className="flex items-center gap-4">

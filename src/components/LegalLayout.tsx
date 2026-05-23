@@ -13,7 +13,7 @@ interface LegalLayoutProps {
 
 export default function LegalLayout({ title, badge, lastUpdated, children }: LegalLayoutProps) {
   return (
-    <div className="min-h-screen bg-[#F7F7F5]">
+    <div className="min-h-full bg-[#F7F7F5]">
       {/* Header */}
       <div className="bg-white border-b border-[rgba(0,0,0,0.06)]">
         <div className="container-tight py-6">

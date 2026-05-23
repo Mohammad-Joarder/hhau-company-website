@@ -53,7 +53,9 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[#F7F7F5] text-[#111111]">
-        {children}
+        <div className="flex flex-col flex-1" style={{ paddingTop: "var(--nav-height)" }}>
+          {children}
+        </div>
       </body>
     </html>
   );

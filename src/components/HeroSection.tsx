@@ -2,7 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 export default function HeroSection() {
@@ -20,7 +20,7 @@ export default function HeroSection() {
     <section
       ref={ref}
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#F7F7F5] noise-bg"
+      className="relative min-h-[calc(100vh-var(--nav-height))] flex items-center justify-center overflow-hidden bg-[#F7F7F5] noise-bg"
       aria-label="Hero section"
     >
       {/* Ambient bg */}
@@ -48,19 +48,7 @@ export default function HeroSection() {
         </svg>
       </div>
 
-      <motion.div style={{ opacity }} className="relative z-10 container-tight text-center pt-32 pb-20">
-
-        {/* Badge */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as [number,number,number,number] }}
-          className="inline-flex items-center gap-2 bg-white/80 border border-[rgba(0,0,0,0.08)] px-4 py-2 rounded-full text-xs font-medium text-[#4A4F4A] mb-10 shadow-[0_1px_4px_rgba(0,0,0,0.06)]"
-        >
-          <Sparkles size={12} className="text-[#1AABF0]" />
-          <span>Production-Grade Australian Platforms</span>
-          <span className="w-1 h-1 rounded-full bg-[#1AABF0] animate-pulse-subtle" />
-        </motion.div>
+      <motion.div style={{ opacity }} className="relative z-10 container-tight text-center py-16 md:py-24">
 
         {/* Platform logo lockup — the centrepiece */}
         <motion.div
