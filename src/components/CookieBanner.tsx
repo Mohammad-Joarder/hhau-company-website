@@ -5,15 +5,19 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Cookie, X } from "lucide-react";
 
 export default function CookieBanner() {
+  const [mounted, setMounted] = useState(false);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const accepted = localStorage.getItem("cookie-consent");
     if (!accepted) {
       const timer = setTimeout(() => setVisible(true), 2000);
       return () => clearTimeout(timer);
     }
   }, []);
+
+  if (!mounted) return null;
 
   const accept = () => {
     localStorage.setItem("cookie-consent", "accepted");

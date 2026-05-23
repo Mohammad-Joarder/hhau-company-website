@@ -10,6 +10,7 @@ import LegalSection from "@/components/LegalSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
+import BackToTop from "@/components/BackToTop";
 
 export default function Home() {
   return (
@@ -34,6 +35,7 @@ export default function Home() {
       </main>
       <Footer />
       <CookieBanner />
+      <BackToTop />
     </>
   );
 }

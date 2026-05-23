@@ -349,12 +349,12 @@ export default function AppDownloadSection() {
           transition={{ duration: 0.7, delay: 0.6 }}
           className="mt-10 text-center"
         >
-          <p className="text-xs text-[#6B7280] flex items-center justify-center gap-2">
+          <div className="text-xs text-[#6B7280] flex items-center justify-center gap-2">
             <svg viewBox="0 0 16 16" className="w-3.5 h-3.5 fill-[#4A7C6B] flex-shrink-0" aria-hidden="true">
               <path d="M8 1L2 4v4c0 3.55 2.56 6.88 6 7.93C11.44 14.88 14 11.55 14 8V4L8 1z"/>
             </svg>
-            Available on iOS &amp; Android · Free to download · Australian servers · Privacy Act 1988 compliant
-          </p>
+            <span>Available on iOS &amp; Android · Free to download · Australian servers · Privacy Act 1988 compliant</span>
+          </div>
         </motion.div>
       </div>
     </section>

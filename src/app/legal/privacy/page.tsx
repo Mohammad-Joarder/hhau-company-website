@@ -14,7 +14,7 @@ export default function PrivacyPolicy() {
         <section>
           <h2 className="text-xl font-semibold text-[#111111] mb-3">1. Introduction</h2>
           <p>
-            HelpingHandsAu Pty Ltd and LetsGO Technologies Pty Ltd ("we", "our", "us") are committed to
+            HelpingHandsAu Pty Ltd ("we", "our", "us") is committed to
             protecting your personal information and your right to privacy. This Privacy Policy describes
             how we collect, use, disclose, and safeguard your information when you use our platforms,
             websites, and mobile applications.
@@ -164,7 +164,7 @@ export default function PrivacyPolicy() {
               admin@helpinghandsau.com
             </a>
             <br />
-            Gold Coast, Queensland, Australia
+            Queensland, Australia
           </p>
         </section>
       </div>

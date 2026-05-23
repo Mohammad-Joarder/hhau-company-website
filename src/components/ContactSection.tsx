@@ -20,7 +20,7 @@ const contactDetails = [
   {
     icon: MapPin,
     label: "Headquarters",
-    value: "Gold Coast, Queensland, Australia",
+    value: "Queensland, Australia",
     href: null,
   },
 ];

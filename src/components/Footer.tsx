@@ -108,7 +108,7 @@ export default function Footer() {
               <div className="flex flex-col gap-1.5">
                 <div className="flex items-center gap-2 text-xs text-gray-500">
                   <MapPin size={11} className="text-[#1AABF0]" aria-hidden="true" />
-                  <span>Gold Coast, Queensland, Australia</span>
+                  <span>Queensland, Australia</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs text-gray-500">
                   <Shield size={11} className="text-[#1AABF0]" aria-hidden="true" />
@@ -185,7 +185,7 @@ export default function Footer() {
           className="py-5 flex flex-col sm:flex-row items-center justify-between gap-4"
         >
           <p className="text-xs text-gray-600 text-center sm:text-left">
-            © {CURRENT_YEAR} HelpingHandsAu Pty Ltd &amp; LetsGO Technologies Pty Ltd.
+            © {CURRENT_YEAR} HelpingHandsAu Pty Ltd.
             All rights reserved.
           </p>
           <div className="flex items-center gap-4">

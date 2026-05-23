@@ -30,7 +30,7 @@ export default function TermsOfService() {
           <p className="mt-3">
             <strong>LetsGO</strong> is a rideshare and mobility platform that connects riders with drivers.
             We provide technology infrastructure and payment processing but drivers are independent
-            operators, not employees of LetsGO Technologies Pty Ltd.
+            operators, not employees of HelpingHandsAu Pty Ltd.
           </p>
         </section>
 
@@ -114,7 +114,7 @@ export default function TermsOfService() {
               admin@helpinghandsau.com
             </a>
             <br />
-            Gold Coast, Queensland, Australia
+            Queensland, Australia
           </p>
         </section>
       </div>
